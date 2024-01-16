@@ -2,18 +2,49 @@ public class Lesson05Program {
 
     public static void main(String[] args) {
 
-        boolean bool = false;
         int a = 0;
-        while (!bool){
+
+        while(true){
             System.out.println(a);
             a++;
-            if(a == 10){
-                bool = true;
-
+            if(a > 10){
+                break;
             }
         }
+
+//        for (; ;){
+//            System.out.println(a);
+//            a++;
+//            if (a > 10){
+//                return;
+//            }
+//
+//        }
+
+
     }
     }
+//        int a = 0;
+//
+//        do {
+//            System.out.println(a);
+//            a++;
+//        } while(a < 10);
+//    }
+//}
+
+//        boolean bool = false;
+//        int a = 0;
+//        while (!bool){
+//            System.out.println(a);
+//            a++;
+//            if(a == 10){
+//                bool = true;
+//
+//            }
+//        }
+//    }
+//    }
 //        int a = 0;
 //
 //        while (a < 10){
