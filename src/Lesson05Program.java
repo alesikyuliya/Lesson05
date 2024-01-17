@@ -3,31 +3,55 @@ import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Lesson05Program {
 
     public static void main(String[] args) {
 
-        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int pcNumber = 7;
 
-        int[] arrayInt = new int[25];
-        int keyNumber = 33;
-
-        for (int index = 0; index < arrayInt.length; index++) {
-            arrayInt[index] = random.nextInt(50) + 1;
-
-        }
-
-        System.out.println(Arrays.toString(arrayInt));
-
-        for (int index = 0; index < arrayInt.length; index++) {
-            if (arrayInt[index] == keyNumber) {
-                System.out.println(arrayInt[index] + " with index = " + index + " ");
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Please enter number in zone 0 - 10");
+            int tryNumber = scanner.nextInt();
+            if (tryNumber == pcNumber){
+                System.out.println("You win");
             }
 
         }
+        scanner.close();
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Please enter number in zone 0 - 10");
+//        int tryNumber = scanner.nextInt();
+//        String str = scanner.nextLine();
+//        System.out.println(tryNumber);
+//        System.out.println(tryNumber * 10);
+//        scanner.close();
     }
 }
+
+//        Random random = new Random();
+//
+//        int[] arrayInt = new int[25];
+//        int keyNumber = 33;
+//
+//        for (int index = 0; index < arrayInt.length; index++) {
+//            arrayInt[index] = random.nextInt(50) + 1;
+//
+//        }
+//
+//        System.out.println(Arrays.toString(arrayInt));
+//
+//        for (int index = 0; index < arrayInt.length; index++) {
+//            if (arrayInt[index] == keyNumber) {
+//                System.out.println(arrayInt[index] + " with index = " + index + " ");
+//            }
+//
+//        }
+//    }
+//}
 
 //        for (int arrayElement:
 //        arrayInt){
